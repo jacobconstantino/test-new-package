@@ -1,0 +1,19 @@
+{
+    "name": "johnc/calculator-package",
+    "description": "Just testing Creating a Package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Johnc\\CalculatorPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John Sovereign",
+            "email": "John.c@shakewell.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

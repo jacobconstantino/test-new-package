@@ -2,7 +2,7 @@
 
 
 
-namespace TestPackage\CalculatorPackage;
+namespace JohnC\CalculatorPackage;
 
 
 
@@ -31,3 +31,4 @@ class CalculatorPackage
         return $a / $b;
     }
 }
+
