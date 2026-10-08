@@ -1,19 +1,36 @@
 {
-    "name": "johnc/calculator-package",
-    "description": "Just testing Creating a Package",
+    "name": "johnc/laravel-logger",
+    "description": "Custom activity logger for Laravel",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Johnc\\CalculatorPackage\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "John Sovereign",
             "email": "John.c@shakewell.net"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "JohnC\\Logger\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JohnC\\Logger\\LoggerServiceProvider"
+            ],
+            "aliases": {
+                "Logger": "JohnC\\Logger\\Facades\\Logger"
+            }
+        }
+    },
+    "minimum-stability": "stable"
 }
